@@ -1,6 +1,3 @@
-/* Stage- Bootstrap one page Event ticket booking theme 
-Created by pixpalette.com - online design magazine */
-
 @charset "utf-8";
 /* CSS Document */
 html, body {
@@ -59,34 +56,6 @@ label {
     font-weight: 400;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-control {
-    height: 40px;
-    font-size: 18px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0px;
-    padding: 6px 0px;
-    box-shadow: none;
-	font-weight: 100;
-	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.form-control:focus {
-    border-color: #666666;
-    outline: 0;
-    box-shadow: none;
-	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-
 /* loader */
 .loader{
     position: fixed;
@@ -125,9 +94,10 @@ label {
 }
 .event-banner-wrapper {
 	position: fixed;
-    width: 41.66666667%;
-    height: 100%;	
+    width: 31.66666667%;
+    height: 100%;
     padding: 20px;
+    padding-top: 15px;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -206,10 +176,10 @@ label {
 
 .event-tab .nav-tabs {
 	position: fixed;
-	top: 0;
-	left: 41.66666667%;
+	top: 0px;
+	left: 31.66666667%;
 	background: #fff;
-	width: 58.33333333%;
+	width: 68.33333333%;
 	border-bottom: 0;
     padding: 20px 40px;
 	margin-bottom: 30px;
@@ -240,6 +210,8 @@ label {
 
 .event-tab .tab-content {
     margin-top: 45px;
+    width: 100%;
+
 }
 
 .event-tab .tab-content .tab-pane {
@@ -292,10 +264,10 @@ label {
     text-align: right;
 }
  
-.ticketBox .ticket-price-count-box .ticket-control {
+/* .ticketBox .ticket-price-count-box .ticket-control {
 	float: right;
     width: 30px;
-}
+} */
 
 .ticketBox .ticket-price-count-box .ticket-control .form-control {
 	width: 50px;
@@ -364,9 +336,9 @@ iframe {
     background: #fff;
     margin-bottom: 0;
     position: fixed;
-    left: 41.66666667%;
+    left: 31.66666667%;
     bottom: 0;
-    width: 58.33333333%;
+    width: 68.33333333%;
     z-index: 99;
 }
 
@@ -599,7 +571,7 @@ iframe {
 .stippleBox {
     position: relative;
     padding: 15px 20px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -630,7 +602,7 @@ iframe {
 }
 
 .stippleBox .stipple-description p {
-	font-size: 16px;
+	font-size: 22px;
     font-weight: 400;
     color: #666;
 }
@@ -641,7 +613,7 @@ iframe {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1950px) {
     #to-hide {
         display: none;
     }
