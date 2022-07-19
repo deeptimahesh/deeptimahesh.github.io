@@ -75,7 +75,7 @@ label {
 }
 
 .left-wrapper, .right-wrapper{
-    padding-right: 0px;
+    padding-right: 10px;
     padding-left: 0px;
 }
 
@@ -94,7 +94,7 @@ label {
 }
 .event-banner-wrapper {
 	position: fixed;
-    width: 31.66666667%;
+    width: 30%;
     height: 100%;
     padding: 20px;
     padding-top: 15px;
@@ -137,7 +137,7 @@ label {
 	font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
 	font-size: 50px;
     font-weight: 600;
-	line-height: 3.5vw;
+	line-height: 1;
     color: #fff;
     margin: 0;
     top: 35px;
@@ -171,7 +171,7 @@ label {
 
 /* event ticket css */
 .event-ticket-wrapper{	
-    padding: 40px;
+    padding: 20px;
 }
 
 .event-tab .nav-tabs {
@@ -209,6 +209,7 @@ label {
 }
 
 .event-tab .tab-content {
+    padding-top: 10px;
     margin-top: 45px;
     width: 100%;
 
@@ -570,7 +571,7 @@ iframe {
 
 .stippleBox {
     position: relative;
-    padding: 15px 20px;
+    padding-top: 15px;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -585,7 +586,7 @@ iframe {
     color: #666;
     display: block;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .stippleBox .stipple-sub-heading span {
