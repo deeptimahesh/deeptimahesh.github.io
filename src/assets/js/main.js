@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Add active class to navigation links based on current page
-  highlightCurrentPage();
+  // Update active navigation link on scroll
+  window.addEventListener('scroll', updateActiveNavOnScroll);
+  
+  // Set the initial active link
+  updateActiveNavOnScroll();
 });
 
 /**
@@ -55,27 +58,32 @@ function animateElements() {
 }
 
 /**
- * Highlight current page in navigation
+ * Update active navigation link on scroll
  */
-function highlightCurrentPage() {
-  // Get current page path
-  const currentPath = window.location.pathname;
+function updateActiveNavOnScroll() {
+  // Get all sections
+  const sections = document.querySelectorAll('section[id]');
   
-  // Find all nav links
-  const navLinks = document.querySelectorAll('.nav-link');
+  // Current scroll position
+  const scrollPosition = window.scrollY;
   
-  // Loop through links and add active class to the current page
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
+  // Check each section to see if it's in view
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
     
-    // If the link's href matches the current path or
-    // if we're on the homepage and the link points to index.html
-    if (linkPath === currentPath || 
-        (currentPath.endsWith('/') && linkPath === 'index.html') ||
-        (currentPath.endsWith('/index.html') && linkPath === 'index.html')) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      // Remove active class from all links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      // Add active class to the current section link
+      const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
     }
   });
 } 
