@@ -33,7 +33,7 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -207,7 +207,6 @@ img {
 
 .project-card a {
   color: var(--text-color);
-  display: block;
   text-decoration: none;
 }
 

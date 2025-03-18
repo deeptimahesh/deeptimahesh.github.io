@@ -17,7 +17,7 @@ This is a modern, responsive portfolio website showcasing Deepti Mahesh's projec
 
 ## Structure
 
-```
+```bash
 ├── index.html (Redirects to src/index.html)
 ├── src/
 │   ├── index.html (Main homepage)
